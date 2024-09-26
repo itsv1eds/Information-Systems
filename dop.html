@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html>
+<head>
+    <title>Таблица осадков и температур</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #7E9E51;
+            color: white;
+        }
+
+        .territory-header {
+            background-color: #C2ACD4;
+            color: white;
+        }
+
+        .territory {
+            background-color: #E5DFEF; 
+        }
+
+        .month-header {
+            background-color: #DCE5B3;
+        }
+    </style>
+</head>
+<body>
+
+<h3>Месяц года</h3>
+
+<table>
+    <tr>
+        <th rowspan="2" class="territory-header">Территория</th>
+        <th colspan="2">июль</th>
+        <th colspan="2">январь</th>
+    </tr>
+    <tr>
+        <th class="month-header">Осадки (мм)</th>
+        <th class="month-header">Температура (°C)</th>
+        <th class="month-header">Осадки (мм)</th>
+        <th class="month-header">Температура (°C)</th>
+    </tr>
+    <tr>
+        <td class="territory">Тульская обл.</td>
+        <td>85</td>
+        <td>23</td>
+        <td>26</td>
+        <td>-15</td>
+    </tr>
+    <tr>
+        <td class="territory">Курская обл.</td>
+        <td>63</td>
+        <td>27</td>
+        <td>32</td>
+        <td>-12</td>
+    </tr>
+    <tr>
+        <td class="territory">Псковская обл.</td>
+        <td>78</td>
+        <td>19</td>
+        <td>35</td>
+        <td>-21</td>
+    </tr>
+    <tr>
+        <td class="territory">Пермская обл.</td>
+        <td>54</td>
+        <td>16</td>
+        <td>45</td>
+        <td>-27</td>
+    </tr>
+</table>
+
+</body>
+</html>
