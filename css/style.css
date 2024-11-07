@@ -3,7 +3,7 @@ body {
     line-height: 26px;
     font-family: Arial, sans-serif;
     color: #222222;
-    margin: 20px;
+    margin: 0;
     background-color: #2e2e2e;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,6 +15,33 @@ body {
     text-align: center;
     font-family: Verdana, sans-serif;
     line-height: 36px;
+    color: #fff;
+    background-color: #4a87fa;
+    padding: 20px 0;
+}
+
+header p {
+    text-align: center;
+    font-size: 24px;
+    margin: 5px;
+    color: #fff;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+nav {
+    flex: 1;
+    background-color: #e0e7f1;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+nav h4 {
+    color: #4a87fa;
 }
 
 a:link, a:visited, a:hover, a:active {
@@ -22,26 +49,38 @@ a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
-h2 {
+article {
+    flex: 3;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+article h2, article h1 {
+    color: #4a87fa;
+}
+
+article h2 {
     font-size: 20px;
-    color: #4a87fa;
-    line-height: normal;
 }
 
-h4 {
-    font-size: 18px;
-    color: #4a87fa;
-    line-height: normal;
+article h1 {
+    font-size: 28px;
 }
 
-del {
-    color: black;
-}
-
-.ad {
-    margin-top: 20px;
-    text-align: center;
+aside.ad {
+    flex: 1;
+    background-color: #4a87fa;
     color: white;
-    background-color: #444;
-    padding: 10px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    background-color: #4a87fa;
+    padding: 15px 0;
 }
