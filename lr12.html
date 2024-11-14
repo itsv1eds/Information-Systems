@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакты</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .contact-form {
+            background-color: #2a4d8e;
+            color: #ffffff;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 50px auto;
+        }
+        .contact-form input[type="text"],
+        .contact-form input[type="email"],
+        .contact-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact-form input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form .submit-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .contact-form .reset-btn {
+            background-color: #d9534f;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="contact-form">
+    <h2>Напишите мне:</h2>
+    <form action="mailto: dominowka.falk@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Ваше имя (компания):</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Ваш e-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="subject">Тема:</label>
+        <input type="text" id="subject" name="subject">
+
+        <label for="message">Сообщение:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <label>
+            <input type="checkbox" name="consent" required>
+            Согласие на обработку персональных данных
+        </label><br><br>
+
+        <button type="submit" class="submit-btn">Отправить</button>
+        <button type="reset" class="reset-btn">Очистить форму</button>
+    </form>
+</div>
+
+</body>
+</html>
