@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Об авторе</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ede7f6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #444;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #555;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto;
+        }
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        #preloader .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+    
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+    
+    <script>
+        // Убираем экран загрузки после полной загрузки страницы с задержкой
+     window.onload = function () {
+            setTimeout(function () {
+                document.getElementById('preloader').style.display = 'none';
+            }, 2000);
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Об авторе</h1>
+    </header>
+    <main class="container">
+        <p>Автор сайта - студент <b>Б</b>ашкирского <b>Г</b>осударственого <b>А</b>грарного <b>У</b>ниверситета, который учится на специальность Бизнес-информатика. Ниже вы найдёте ссылки на мои социальные сети и форму для обратной связи.</p>
+        <ul>
+            <li><a href="https://t.me/itsv1eds" target="_blank">Telegram</a></li>
+            <li><a href="https://www.vk.com/itsv1eds" target="_blank">VK</a></li>
+            <li><a href="https://www.github.com/itsv1eds" target="_blank">GitHub</a></li>
+        </ul>
+        <h2>Обратная связь</h2>
+        <form action="mailto:example@example.com" method="post" enctype="text/plain">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Ваш email" required>
+
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Ополев Владислав | itsv1eds.ru</p>
+    </footer>
+</body>
+</html>
